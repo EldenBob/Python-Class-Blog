@@ -1,5 +1,5 @@
 ## 目录
----
+--
 1. ####  **第一节课的实操**  
     - 使用`Wordcloud`制作词云
 
@@ -20,12 +20,12 @@
 
 <br>
 # 一、Class1 实操
----
+--
 >第一节课的上机实操，通过对文本进行分词并制作词云图，对环境和库的安装、基本代码、基本操作进行了复习。
 > <br>环境`Python3.7` `Jupyter Notebook` 用到的库 `Wordcloud` `jieba` `os`  `matplotlib.pyplot`
 
 ##1.使用`Wordcloud`制作词云
----
+--
 
 需求：读取一段文档，使用`Wordcloud`生成一张词云图。代码如下：
 
