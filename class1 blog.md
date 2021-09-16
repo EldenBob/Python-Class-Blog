@@ -42,7 +42,7 @@ plt.imshow(wc)
 plt.axis('off')
 plt.show()
 ```
-我的文本选用的廖祥忠校长的讲话：“大学是什么”。使用`Wordcloud`傻瓜式生成的图片如下：
+我的文本选用的廖祥忠校长的讲话：“大学是什么”。使用`Wordcloud`傻瓜式生成的图片如下：<br>
 ![“大学是什么”词云](https://raw.githubusercontent.com/EldenBob/Python-Class-Blog/main/image/class1/1.png)
 
 ## 2.使用`jieba`进行分词
