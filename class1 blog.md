@@ -11,7 +11,7 @@
 3. ####**拓展**
     - Markdown使用技巧
     - Jupyter使用技巧
-  
+
 > ### 写在前面
 > 回忆起第一次接触 Python ，还是在疫情期间，跟着网课一点一点地了解了 Python 的基础语法。后来的计算广告课程，算是开始使用 Python 进行实战，真正解决应用问题。时至今日，我、我们还在思考，我们学习 Python 的意义是什么？它能为我们带来什么？  <br>
 如果我们只是把 Python 当成一种编程语言，一种解决问题的工具，我想这对于我们来说远远不够，也不是这门课的终极奥义。
@@ -28,8 +28,9 @@
 ---
 
 需求：读取一段文档，使用`Wordcloud`生成一张词云图。代码如下：
-```
-import os 
+
+```py
+import os
 print(os.getcwd())        #获取根目录以便存放相关文件
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt        #方便在Jupyter中预览生成的图片
@@ -42,14 +43,14 @@ plt.axis('off')
 plt.show()
 ```
 我的文本选用的廖祥忠校长的讲话：“大学是什么”。使用`Wordcloud`傻瓜式生成的图片如下：
-![“大学是什么”词云](https://upload-images.jianshu.io/upload_images/27029863-df1a7bbf467f1e86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![“大学是什么”词云](https://raw.githubusercontent.com/EldenBob/Python-Class-Blog/main/image/class1/1.png)
 
 ## 2.使用`jieba`进行分词
 ---
 需求：观察上图可知，`Worldcloud`直接生成的词云图中，分词出现了一些问题。那么这个时候就需要引入中文分词库`jieba`来帮助`Worldcloud`更好的生成图片。代码参考：
 
-```
-import jieba 
+```py
+import jieba
 jieba.add_word("传媒大学")        
 words = jieba.lcut(text)
 ```
@@ -71,7 +72,7 @@ print(newitems)
 > 吐槽：简书对于MarkDown代码块的文本高亮支持的好差。
 
 生成结果如下：
-![前几个分词结果](https://upload-images.jianshu.io/upload_images/27029863-04b730c98d3ea899.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![前几个分词结果](https://raw.githubusercontent.com/EldenBob/Python-Class-Blog/main/image/class1/3.png)
 
 ## 3.综合运用
 ---
@@ -85,12 +86,12 @@ plt.imshow(wc)
 plt.axis('off')
 plt.show()
 ```
-![分词后的结果](https://upload-images.jianshu.io/upload_images/27029863-72e11fd37ddf6ad2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![分词后的结果](https://raw.githubusercontent.com/EldenBob/Python-Class-Blog/main/image/class1/2.png)
 
 当然，这样的图片还是太丑了。老师上课对图片进行了美化，这里有一个教程，详细地介绍了如何通过`Wordcloud`对象进行词云美化。我就不copy代码了，上链接：
 [数据美化 | 更清晰的Python词云wordcloud](https://blog.csdn.net/qq_40442753/article/details/109717664)
 通过老师的案例和其它的参考，我最终也生成了一张美化的图片：
-![中传棒棒](https://upload-images.jianshu.io/upload_images/27029863-8638bbda4dae03a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![中传棒棒](https://raw.githubusercontent.com/EldenBob/Python-Class-Blog/main/image/class1/4.png)
 
 # 二、遇到的问题
 ---
